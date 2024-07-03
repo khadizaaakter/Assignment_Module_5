@@ -34,4 +34,10 @@ body {
 .wrapper .img_area {
     height: 150px;
     width: 150px;
+    border-radius: 50%;
+}
+
+.img_area .image{
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
 }
