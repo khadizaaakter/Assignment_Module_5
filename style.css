@@ -14,7 +14,8 @@ body {
 }
 
 .wrapper,
-.wrapper .img_area {
+.wrapper .img_area,
+.icons a {
   background: #dfe5ea;
   box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
   border-radius: 10px;
@@ -52,8 +53,58 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-.wrapper .name{
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: 500;
+.wrapper .name {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 10px;
 }
+
+.wrapper .about {
+  padding-bottom: 7px;
+  font-size: 17px;
+  color: black;
+}
+
+.wrapper .email {
+    padding-bottom: 7px;
+    font-size: 17px;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .wrapper .email:hover {
+    color: blue;
+  }
+
+.wrapper .number {
+  padding-bottom: 7px;
+  font-size: 17px;
+  color: black;
+}
+
+.wrapper .icons{
+    margin: 15px 0 25px 0;
+}
+
+.icons a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 5px ;
+    border-radius: 50%;
+}
+
+.icons a i{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+}
+
+.icons a i:hover{
+    
+}
+
