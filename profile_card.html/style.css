@@ -13,15 +13,10 @@ body {
   background: #dfe5ea;
 }
 
-.wrapper
- {
+.wrapper {
   background: #dfe5ea;
   box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
   border-radius: 10px;
-}
-
-.wrapper {
-  background: #dfe5ea;
   border: 1px solid rgb(239, 241, 243);
   width: 50vh;
   padding: 30px;
@@ -29,7 +24,47 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+}
 
+.dropdown {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #dfe5ea;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dfe5ea;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content p:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .wrapper .img_area {
@@ -40,15 +75,12 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
-
-
 }
 
 .img_area .image {
   height: calc(100% - 25px);
   width: calc(100% - 25px);
   border-radius: 50%;
-
 }
 
 .image img {
@@ -57,6 +89,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
 .wrapper .name {
   padding-top: 10px;
   font-size: 20px;
@@ -72,15 +105,15 @@ body {
 }
 
 .wrapper .email {
-    padding-bottom: 7px;
-    font-size: 17px;
-    color: black;
-    text-decoration: underline;
-  }
-  
-  .wrapper .email:hover {
-    color: blue;
-  }
+  padding-bottom: 7px;
+  font-size: 17px;
+  color: black;
+  text-decoration: underline;
+}
+
+.wrapper .email:hover {
+  color: blue;
+}
 
 .wrapper .number {
   padding-bottom: 7px;
@@ -89,91 +122,89 @@ body {
 }
 
 .wrapper .descripton {
-    padding-bottom: 7px;
-    padding-left: 15px;
-    font-size: 17px;
-    color: black;
-    text-align: center;
-}
-.wrapper .descripton p{
-    justify-content: center;
-    align-items: center;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  font-size: 17px;
+  color: black;
+  text-align: center;
 }
 
-.wrapper .icons{
-    margin: 15px 0 25px 0;
+.wrapper .descripton p {
+  justify-content: center;
+  align-items: center;
 }
 
-.icons a{
-    height: 40px;
-    width: 40px;
-    display: inline-flex;
-    text-decoration: none;
-    margin: 0 5px ;
-    border-radius: 50%;
-    box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
-
+.wrapper .icons {
+  margin: 15px 0 25px 0;
 }
 
-.icons a i{
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    line-height: 40px;
+.icons a {
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  text-decoration: none;
+  margin: 0 5px;
+  border-radius: 50%;
+  box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
 }
 
-.icons a i:hover{
-    transform: scale(1.1);
-}
-.icons a.git i{
-    color: black;
-}
-
-.icons a.fb i{
-    color:	#1877F2;
+.icons a i {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
 }
 
-.icons a.twitter i{
-    color: 	#1DA1F2;
-}
-.icons a.ldn i{
-    color: #0077B5;
+.icons a i:hover {
+  transform: scale(1.1);
 }
 
-.buttons{
-padding: 10px;
+.icons a.git i {
+  color: black;
 }
 
-.buttons .hire{
-    background-color: #dfe5ea;
-    padding: 8px;
-    width: 100px;
-    font-size: 16px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: #dfe5ea;
-    box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
-
-
+.icons a.fb i {
+  color: #1877f2;
 }
 
-.buttons .hire:hover{
-    color: #597445;
-
+.icons a.twitter i {
+  color: #1da1f2;
 }
 
-.buttons .contact{
-    background-color: #dfe5ea;
-    padding: 8px;
-    width: 100px;
-    font-size: 16px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: white;
-    box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
-
+.icons a.ldn i {
+  color: #0077b5;
 }
 
-.buttons .contact:hover{
-color: #597445;
+.buttons {
+  padding: 10px;
+}
+
+.buttons .hire {
+  background-color: #dfe5ea;
+  padding: 8px;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #dfe5ea;
+  box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
+}
+
+.buttons .hire:hover {
+  color: #597445;
+}
+
+.buttons .contact {
+  background-color: #dfe5ea;
+  padding: 8px;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: white;
+  box-shadow: -3px -3px 7px #ffff, 3px 3px 5px #ceced1;
+}
+
+.buttons .contact:hover {
+  color: #597445;
 }
