@@ -12,4 +12,4 @@ if ($num1 >= $num2 && $num1 >= $num3) {
     $largest = $num3;
 }
 
-echo "The largest number among $num1, $num2, and $num3 is: $largest";
+echo "The largest number is: $largest";
